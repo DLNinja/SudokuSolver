@@ -1,2 +1,2 @@
 # MLninja
- just some code
+ A sudoku solver for console
