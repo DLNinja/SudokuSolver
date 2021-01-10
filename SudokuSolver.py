@@ -1,15 +1,6 @@
-import numpy as np
-
-# board
-sudoku = np.array([[5, 3, 0, 0, 7, 0, 0, 0, 0],
-                   [6, 0, 0, 1, 9, 5, 0, 0, 0],
-                   [0, 9, 8, 0, 0, 0, 0, 6, 0],
-                   [8, 0, 0, 0, 6, 0, 0, 0, 3],
-                   [4, 0, 0, 8, 0, 3, 0, 0, 1],
-                   [7, 0, 0, 0, 2, 0, 0, 0, 6],
-                   [0, 6, 0, 0, 0, 0, 2, 8, 0],
-                   [0, 0, 0, 4, 1, 9, 0, 0, 5],
-                   [0, 0, 0, 0, 8, 0, 0, 7, 9]])
+sudoku = open('input.txt', 'r').readlines()
+sudoku = [i.replace('\n', '').split(" ") for i in sudoku]
+sudoku = [[int(x) for x in i] for i in sudoku]
 
 def board(sudo):
     # print board
